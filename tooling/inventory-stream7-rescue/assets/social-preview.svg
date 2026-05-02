@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#0d1520"/>
+  <rect x="64" y="64" width="1152" height="512" rx="28" fill="#132030" stroke="#29415f" stroke-width="2"/>
+
+  <text x="96" y="160" fill="#eef4ff" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">inventory-stream7-rescue</text>
+  <text x="96" y="220" fill="#8fd3ff" font-family="Arial, Helvetica, sans-serif" font-size="28">Cross-platform inventory, rescue triage, and install-path assessment</text>
+  <text x="96" y="258" fill="#8fd3ff" font-family="Arial, Helvetica, sans-serif" font-size="28">for constrained Linux and Windows systems.</text>
+
+  <rect x="96" y="320" width="300" height="132" rx="18" fill="#182a40"/>
+  <text x="122" y="366" fill="#eef4ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">General baseline first</text>
+  <text x="122" y="402" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">Linux + Windows audit,</text>
+  <text x="122" y="428" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">assessment, reporting, role fit</text>
+
+  <rect x="430" y="320" width="300" height="132" rx="18" fill="#182a40"/>
+  <text x="456" y="366" fill="#eef4ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Specialized second</text>
+  <text x="456" y="402" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">Stream 7 continuation path</text>
+  <text x="456" y="428" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">for unusually constrained devices</text>
+
+  <rect x="764" y="320" width="300" height="132" rx="18" fill="#182a40"/>
+  <text x="790" y="366" fill="#eef4ff" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">Evidence-first workflow</text>
+  <text x="790" y="402" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">inventory, assessment,</text>
+  <text x="790" y="428" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="18">recommendations before disruption</text>
+
+  <rect x="1098" y="320" width="86" height="132" rx="18" fill="#182a40"/>
+  <text x="1116" y="366" fill="#eef4ff" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Role</text>
+  <text x="1116" y="404" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="17">secondary</text>
+  <text x="1116" y="430" fill="#cfe4ff" font-family="Arial, Helvetica, sans-serif" font-size="17">proof</text>
+
+  <text x="96" y="528" fill="#9fb3cb" font-family="Arial, Helvetica, sans-serif" font-size="20">Public technical reference maintained by Daniel Franco</text>
+</svg>

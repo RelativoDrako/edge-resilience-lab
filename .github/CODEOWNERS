@@ -1,0 +1,22 @@
+# Public surface
+/README.md @RelativoDrako
+/README.non-technical.md @RelativoDrako
+/DISCLAIMER.md @RelativoDrako
+/HOW_TO_USE.md @RelativoDrako
+/ROADMAP.md @RelativoDrako
+/RFP.md @RelativoDrako
+/LEGAL_AND_IP.md @RelativoDrako
+
+# Architecture line
+/docs/** @RelativoDrako
+/diagrams/** @RelativoDrako
+/examples/** @RelativoDrako
+/governance/** @RelativoDrako
+/automation/** @RelativoDrako
+/tooling/** @RelativoDrako
+
+# Deploy and workflows
+/deploy_clean.ps1 @RelativoDrako
+/deploy_std.ps1 @RelativoDrako
+/.github/workflows/** @RelativoDrako
+/.github/CODEOWNERS @RelativoDrako
