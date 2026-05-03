@@ -1,0 +1,23 @@
+{
+    "repo_name":  "edge-resilience-lab",
+    "repo_kind":  "erl",
+    "required_checks":  [
+                            "erl-boundary-check",
+                            "erl-readme-consistency-check",
+                            "erl-diagram-reference-check",
+                            "erl-controlled-deploy"
+                        ],
+    "critical_paths":  [
+                           "README.md",
+                           "docs",
+                           "diagrams",
+                           ".github/workflows"
+                       ],
+    "public_surface_paths":  [
+                                 "README.md",
+                                 "docs",
+                                 "diagrams",
+                                 "governance",
+                                 "automation"
+                             ]
+}
