@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run erl-boundary-check
         shell: pwsh
-        run: .\governance\templates\validators\boundary-terms-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]' -RequiredTermsJson '["architectural","human-in-the-loop","auditability"]'
+        run: ./governance/templates/validators/boundary-terms-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]' -RequiredTermsJson '["architectural","human-in-the-loop","auditability"]'
   erl-readme-consistency-check:
     name: erl-readme-consistency-check
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run erl-readme-consistency-check
         shell: pwsh
-        run: .\governance\templates\validators\readme-lint.ps1 -RepoRoot ${{ github.workspace }} -RequiredHeadingsJson '["Purpose","Boundary","How to use"]'
+        run: ./governance/templates/validators/readme-lint.ps1 -RepoRoot ${{ github.workspace }} -RequiredHeadingsJson '["Purpose","Boundary","How to use"]'
   erl-diagram-reference-check:
     name: erl-diagram-reference-check
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run erl-diagram-reference-check
         shell: pwsh
-        run: .\governance\templates\validators\image-reference-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]'
+        run: ./governance/templates/validators/image-reference-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]'
   erl-controlled-deploy:
     name: erl-controlled-deploy
     runs-on: ubuntu-latest
@@ -44,4 +44,4 @@ jobs:
         uses: actions/checkout@v4
       - name: Run erl-controlled-deploy
         shell: pwsh
-        run: .\governance\templates\validators\path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["docs","diagrams"]'
+        run: ./governance/templates/validators/path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["docs","diagrams"]'
