@@ -1,0 +1,47 @@
+# GENERATED FILE - do not edit manually
+name: Governance Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  erl-boundary-check:
+    name: erl-boundary-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run erl-boundary-check
+        shell: pwsh
+        run: ./governance/templates/validators/boundary-terms-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]' -RequiredTermsJson '["architectural","human-in-the-loop","auditability"]'
+  erl-readme-consistency-check:
+    name: erl-readme-consistency-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run erl-readme-consistency-check
+        shell: pwsh
+        run: ./governance/templates/validators/readme-lint.ps1 -RepoRoot ${{ github.workspace }} -RequiredHeadingsJson '["Purpose","Boundary","How to use"]'
+  erl-diagram-reference-check:
+    name: erl-diagram-reference-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run erl-diagram-reference-check
+        shell: pwsh
+        run: ./governance/templates/validators/image-reference-check.ps1 -RepoRoot ${{ github.workspace }} -TargetFilesJson '["README.md"]'
+  erl-controlled-deploy:
+    name: erl-controlled-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run erl-controlled-deploy
+        shell: pwsh
+        run: ./governance/templates/validators/path-exists-check.ps1 -RepoRoot ${{ github.workspace }} -ExpectedPathsJson '["docs","diagrams"]'

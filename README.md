@@ -11,6 +11,15 @@
 This repository is a professional architectural reference and governance framework.  
 It is conceptual in nature and does not constitute an implementation, product, or deployment guidance.
 
+## Purpose
+Edge Resilience Lab is an architectural exploration repository for governed systems design, resilient operations, and applied control patterns under constraints.
+
+## Boundary
+This repository is architectural in nature. It is not presented as a finished operational product. It emphasizes human-in-the-loop review, explicit controls, and auditability.
+
+## How to use
+Review the README, diagrams, and governance artifacts first. Then inspect the documented patterns and apply them as controlled references for future implementation work.
+
 ---
 
 ## Executive Positioning
